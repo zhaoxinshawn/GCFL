@@ -1,0 +1,48 @@
+DATASET: 'regdb'
+
+START_EPOCH: 1
+MAX_EPOCH: 36
+BATCH_SIZE: 32
+NUM_POS: 4
+
+# PMT
+#METHOD: 'PMT'  # 'PMT' or 'base'
+#METHOD: 'PMT'     # 'BaseTripletModality' or 'TripletModality_loss' TripletModality_colorEmbedding
+#  VI_two_Modality
+#  RGB_gary_Modality
+# IR_gary_Modality
+#Tri_2gary_Modality
+#Tri_2gary_Modality_CE
+METHOD: 'Tri_2gary_Modality_CE'
+PL_EPOCH: 2 #4 #6
+GMSEL: 1.0
+GDCL: 1.6
+MA: 1.5 #1.5
+mode: 't2v' #'v2t' or 't2v'
+#GMSEL: 0.5
+#GDCL: 0.5
+#MA: 3.0 #3
+#PM : 0.6
+MARGIN: 0.1
+
+#logger_dir: './logging/RegDB_v2t/PL_EPOCH=2/Tri_2gary_Modality'
+logger_dir: './logging/RegDB_v2t/PL_EPOCH=2/base+cel(cosine)+GMSEL(eucilidean)+GCL(eucilidean)'
+#+GMSEL(eucilidean)+GCL(eucilidean)
+
+
+#logger_dir: './logging/RegDB_v2t/Tri_2gary_Modality_onlyce/'
+
+#logger_dir: './logging/RegDB_v2t/woGCL/'
+
+#logger_dir: './logging/RegDB_v2t/Tri_2gary_Modality_CE0110_(eval)/base+cel(cosine)+GMSEL(eucilidean)+GCL(eucilidean)/'
+
+#
+
+#logger_dir: './logging/optuna_MA'
+#logger_dir: './logging/RegDB_v2t/Tri_2gary_Modality_CE1000/
+#  base+cel(eucilidean)cosine+GMSEL(eucilidean)+GCL(eucilidean)/
+#            GMSEL=2.0,GDCL=1.6,MA=1.5/pl=4'
+
+#logger_dir: './logging/RegDB/n+1/v2t'+cel(eucilidean)cosine
+#  CE1000base+CEL(cosine)+GMSEL(eucilidean)+GCL(eucilidean)
+#before 76 81

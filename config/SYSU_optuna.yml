@@ -1,0 +1,23 @@
+DATASET: 'sysu'
+
+START_EPOCH: 1
+MAX_EPOCH: 24 # 24
+BATCH_SIZE: 32
+NUM_POS: 4
+
+
+#METHOD: 'PMT'     # 'BaseTripletModality' or 'TripletModality_loss' TripletModality_colorEmbedding
+METHOD: 'TripletModality_colorEmbedding'
+PL_EPOCH: 6 #6
+GMSEL: 0.5
+GDCL: 0.5
+MA: 2.0 #3
+PM: 1.0
+
+MARGIN: 0.1
+
+logger_dir: './logging/SYSU/ColorEmbed'
+
+
+
+

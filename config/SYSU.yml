@@ -1,0 +1,29 @@
+DATASET: 'sysu'
+
+START_EPOCH: 1
+MAX_EPOCH: 24 # 24
+BATCH_SIZE: 32
+NUM_POS: 4
+
+
+#METHOD: 'PMT'     # 'BaseTripletModality' or 'TripletModality_loss' TripletModality_colorEmbedding
+METHOD: 'Tri_2gary_Modality_CE'
+PL_EPOCH: 2 #6
+GMSEL: 0.5
+GDCL: 0.5
+MA: 1.5 #3.0 #3
+#PM: 1.0
+MARGIN: 0.1
+mode: 'all'
+#logger_dir: './logging/SYSU/cls_feature_bn/base+CEL(Cosine)'
+#logger_dir: './logging/sysu_all/TripletModality_colorEmbedding2/base+GMSEL(eucilidean)+GCL(eucilidean)/
+#            GMSEL=0.5,GDCL=0.5,MA=3.0/'
+#logger_dir: './logging/SYSU/GMSEL=0.5,GDCL=0.5,MA=3.0'
+
+logger_dir: './logging/sysu_all/Tri_2gary_Modality_CE0110ma1.5/PL_EPOCH=2'
+
+
+
+
+
+
